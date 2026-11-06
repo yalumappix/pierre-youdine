@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Contact et devis gratuit | Pierre Youdine, Amilly</title>
+<meta name="description" content="Contactez Pierre Youdine à Amilly (45200) pour un devis gratuit sous 72h : téléphone, adresse et formulaire de demande pour vos travaux de bricolage et rénovation.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Pierre Youdine">
+<meta property="og:title" content="Contact et devis gratuit | Pierre Youdine">
+<meta property="og:description" content="Demandez votre devis gratuit sous 72h par téléphone ou via le formulaire.">
+<meta name="twitter:card" content="summary">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F1EFEA">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Pierre Youdine, accueil">
+      <span class="logo-name">Pierre Youdine</span>
+      <span class="logo-sub">Bricolage · Rénovation</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <span class="menu-label">Menu</span>
+      <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="tel:0644060020" class="nav-tel">06 44 06 00 20</a>
+      <a href="contact.html" class="nav-cta" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Demandez votre <em>devis gratuit</em></h1>
+      </div>
+      <div class="page-hero-side"><p class="lead">Appelez-moi ou remplissez le formulaire : je vous réponds avec un devis gratuit sous 72h.</p><ul class="chips"><li>Devis gratuit</li><li>Réponse sous 72h</li><li>CESU accepté</li></ul></div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h2>Mes coordonnées</h2>
+        <ul class="coords">
+          <li><a href="tel:0644060020"><span class="label">Mobile</span><span class="coord-val">06 44 06 00 20</span></a></li>
+          <li><a href="tel:0950889203"><span class="label">Téléphone fixe</span><span class="coord-val">09 50 88 92 03</span></a></li>
+          <li><div><span class="label">Adresse</span><span class="coord-val coord-addr">62 rue Offenbach, AP 43<br>45200 Amilly</span></div></li>
+        </ul>
+      </div>
+
+      <div class="form-wrap marks">
+        <h2>Formulaire de contact</h2>
+        <form id="contactForm" class="form" action="https://formsubmit.co/appix.web@gmail.com" method="POST" data-ajax="https://formsubmit.co/ajax/appix.web@gmail.com">
+          <input type="hidden" name="_subject" value="Nouvelle demande de devis - site Pierre Youdine">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="nom">Nom et prénom</label>
+            <input type="text" id="nom" name="Nom" required autocomplete="name">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel" name="Téléphone" required autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="email">E-mail <span class="optional">(facultatif)</span></label>
+              <input type="email" id="email" name="E-mail" autocomplete="email">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="type">Type de travaux</label>
+            <select id="type" name="Type de travaux" required>
+              <option value="" disabled selected>Choisir…</option>
+              <option>Peinture</option>
+              <option>Placoplâtre</option>
+              <option>Toiture</option>
+              <option>Gouttières ou volets bois</option>
+              <option>Pose de porte, fenêtre ou Velux</option>
+              <option>Papier peint ou parquet</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Votre projet</label>
+            <textarea id="message" name="Message" rows="5" required></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="Consentement" value="Oui" required>
+            <span>J'accepte que mes informations soient utilisées pour répondre à ma demande. <a href="mentions-legales.html#donnees">En savoir plus</a></span>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-ground" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">Pierre Youdine</p>
+        <p class="footer-sub">Bricolage · Rénovation · Amilly</p>
+      </div>
+      <a href="contact.html" class="footer-cta">Demander un devis</a>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <p class="label">Activité</p>
+        <p>Bricolage et rénovation<br>Micro-entrepreneur depuis le 10/08/2015</p>
+      </div>
+      <div>
+        <p class="label">Pages</p>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="label">Contact</p>
+        <p>
+          <a href="tel:0644060020">06 44 06 00 20</a><br>
+          <a href="tel:0950889203">09 50 88 92 03</a><br>
+          62 rue Offenbach, AP 43<br>45200 Amilly
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span class="year">2026</span> APPIX STUDIO.</p>
+      <p>Site créé par <a href="https://appixstudio.com" target="_blank" rel="noopener">APPIX STUDIO</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:0644060020" class="call-fab" aria-label="Appeler Pierre Youdine">Appeler</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
